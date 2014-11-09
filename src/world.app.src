@@ -1,0 +1,12 @@
+{application, world,
+ [
+  {description, "Countries, languages and currencies"},
+  {vsn, "1.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { world_app, []}},
+  {env, []}
+ ]}.
