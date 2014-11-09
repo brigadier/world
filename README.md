@@ -2,14 +2,18 @@ world
 =========
 
 ISO countries, languages, currencies and scripts definitions in Erlang.
+
 The app provides interface to the following standards:
 
 639
     Languages
+
 3166
     Countries and historic countries
+
 4217
     Currencies and historic currencies
+
 15924
     Scripts
 
@@ -42,8 +46,11 @@ Include file include/world.hrl contains the following records to use instead of 
 historic_country, language,  currency, historic_currency. Everywhere in the examples, when you see a tagged tuple,
 assume you can use record with the same name. Some fields may contain 'undefined', some not, look up
 typespecs in world.hrl.
+
 All lookups are case sensitive.
+
 Numeric codes are stored as binaries with leading zeros.
+
 Currencies and countries can be live or historic, you can lookup either or both using Options - ['live'] for live ones,
 ['historic'] for historic ones, ['live', 'historic'] for both. By default, when the list is empty or
 absent, it's 'live' only.
